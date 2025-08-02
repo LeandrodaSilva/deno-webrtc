@@ -76,3 +76,44 @@ button {
     color: whitesmoke;
     font-size: 1.5rem;
 }
+
+
+@media screen and (max-width: 768px){
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 0.5rem 5rem;
+    }
+
+    .call-btn {
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
+
+    .hangup-btn {
+        font-size: 1.2rem;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+
+    .modal {
+        width: 30rem;
+        height: auto;
+        padding: 3rem;
+    }
+
+    .modal input {
+        width: 80%;
+    }
+
+    .modal label {
+        font-size: 1.2rem;
+    }
+
+}
