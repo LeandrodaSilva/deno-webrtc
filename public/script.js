@@ -60,6 +60,9 @@ function connectPeers() {
 }
 peer.on("connection", (connection) => {
     conn = connection;
+    conn.on("close", () => {
+        showCallContent();
+    });
 });
 const callBtn = document.querySelector(".call-btn");
 callBtn.addEventListener("click", () => {
@@ -95,9 +98,6 @@ peer.on("call", (call) => {
 const hangUpBtn = document.querySelector(".hangup-btn");
 hangUpBtn.addEventListener("click", () => {
     conn.close();
-    showCallContent();
-});
-conn.on("close", () => {
     showCallContent();
 });
 
